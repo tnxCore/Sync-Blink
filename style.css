@@ -274,7 +274,6 @@ input:checked + .slider:before {
     transform: scale(calc(var(--depth-scale, 1) * 1.3)) !important;
     z-index: 100;
 }
-}
 .thought-node:hover::before {
     opacity: 0.8;
 }
