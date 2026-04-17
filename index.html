@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Explorer | Digital Consciousness</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Background Gradient Mesh -->
+    <div id="background-mesh"></div>
+    <div class="app-container">
+        
+        <!-- Header -->
+        <header class="header">
+            <h1>Mind Explorer</h1>
+            <p>Digital Consciousness Interface</p>
+        </header>
+        <!-- Deep Dive Panel (Top Middle Controls) -->
+        <div class="deep-dive-panel glass-panel">
+            <h2>Deep Dive Panel</h2>
+            <div class="search-bar">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" id="search-input" placeholder="Search memories...">
+            </div>
+            
+            <div class="toggles">
+                <div class="toggle-row">
+                    <span>Hide Bad Memories</span>
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-bad-memories">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="toggle-row">
+                    <span>Show Only Dreams</span>
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-dreams">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="toggle-row">
+                    <span>Isolate Visual Thoughts</span>
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-visuals">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <button id="mute-btn" class="glass-button">
+                <i class="fa-solid fa-volume-high"></i> Unmute Soundscape
+            </button>
+        </div>
+        <!-- Floating Thoughts Container (Main View) -->
+        <div id="thought-network">
+            <!-- Thoughts will be injected here via JS -->
+        </div>
+        <!-- Bottom Trackers & Timeline -->
+        <div class="bottom-controls">
+            
+            <!-- Emotional State Tracker -->
+            <div class="emotional-state glass-panel">
+                <div class="state-header">
+                    <div class="emotion-orb" id="current-emotion-orb"></div>
+                    <div class="state-text">
+                        <span class="label">Current Emotional State</span>
+                        <strong id="emotion-label">Joyful State</strong>
+                    </div>
+                </div>
+                <div class="emotion-visualizer" id="emotion-wave">
+                    <!-- Liquid bars/waves here -->
+                </div>
+            </div>
+            <!-- Memory Stream -->
+            <div class="memory-stream-container">
+                <div class="memory-stream-label">Memory Stream - Scroll through time &rarr;</div>
+                <div class="memory-stream" id="memory-timeline">
+                    <!-- Memory orbs injected here -->
+                </div>
+            </div>
+            
+            <!-- Tips Panel -->
+            <div class="tips-panel glass-panel">
+                <h3><i class="fa-solid fa-lightbulb"></i> Tips:</h3>
+                <ul>
+                    <li>Hover over thoughts to see them glow</li>
+                    <li>Click thoughts to reveal secrets and shift emotions</li>
+                    <li>Scroll the memory stream to explore time</li>
+                    <li>Use filters to navigate your mind</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Thought Detail Popup -->
+    <div id="thought-popup" class="glass-panel">
+        <button id="close-popup"><i class="fa-solid fa-xmark"></i></button>
+        <div class="popup-content">
+            <div class="popup-icon"><i class="fa-solid fa-cloud"></i></div>
+            <h3 id="popup-title">Thought Detail</h3>
+            <p id="popup-desc">Details of the thought go here.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
